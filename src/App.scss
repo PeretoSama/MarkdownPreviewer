@@ -1,0 +1,55 @@
+@function get-vw($target) {
+    $vw-context: (1000*.01) * 1px;
+    @return ($target/$vw-context) * 1vw;
+}
+
+
+
+.App {
+    background-color: burlywood;
+    height: 100vh;
+    padding-top:50px;
+    
+}
+.editorWrapper {
+  display: flex;
+  flex-direction: column;
+  width: 600px;
+  margin:auto;
+  margin-bottom:50px;
+  .editorHeader {
+    background-color: #1e1f1c;
+    color: whitesmoke;
+    padding:5px;
+  }
+  #editor {
+    background: rgb(0,0,0);
+    background: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(39,40,34,1) 10px);
+    border: none;
+    color: whitesmoke;
+    min-height: 200px;
+  }
+}
+.previewWrapper {
+  display: flex;
+  flex-direction: column;
+  width: 800px;
+  margin:auto;
+  margin-bottom:50px;
+}
+.previewHeader {
+    padding:5px;
+    background-color: #1e1f1c;
+    color: whitesmoke;
+}
+#preview {
+    background: rgb(0,0,0);
+    background: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(39,40,34,1) 10px);
+  color: whitesmoke;
+  padding: 5px;
+  border: 2px solid black;
+  img{
+}
+pre{background-color: grey;}
+code{background-color: grey;}
+}
